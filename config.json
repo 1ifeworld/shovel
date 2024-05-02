@@ -12,7 +12,7 @@
       "enabled": true,
       "sources": [{"name": "optimism"}],
       "table": {
-        "name": "user",
+        "name": "users",
         "columns": [
             { "name": "id", "type": "numeric" },
             { "name": "timestamp", "type": "numeric" },
