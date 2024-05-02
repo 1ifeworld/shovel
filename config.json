@@ -4,7 +4,7 @@
       {
         "name": "optimism",
         "chain_id": 10,
-        "url": "RPC_URL_10"
+        "url": "$RPC_URL_10"
       }
     ],
     "integrations": [{
