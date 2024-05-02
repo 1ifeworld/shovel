@@ -16,7 +16,7 @@
         "name": "users",
         "columns": [
             { "name": "id", "type": "numeric" },
-            { "name": "userId", "type": "numeric" },
+            { "name": "userid", "type": "numeric" },
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "numeric" },
@@ -33,7 +33,7 @@
         "anonymous": false,
         "inputs": [
             { "indexed": true, "name": "to", "type": "address", "column": "to" },
-            { "indexed": false, "name": "id", "type": "uint256", "column": "userId" },
+            { "indexed": false, "name": "id", "type": "uint256", "column": "userid" },
             { "indexed": false, "name": "recovery", "type": "address", "column": "recovery" }
         ]
       }
