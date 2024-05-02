@@ -7,6 +7,7 @@
         "url": "$RPC_URL_10"
       }
     ],
+  
     "integrations": [{
       "name": "IdRegistry",
       "enabled": true,
@@ -15,11 +16,9 @@
         "name": "users",
         "columns": [
             { "name": "id", "type": "numeric" },
-            { "name": "timestamp", "type": "numeric" },
             { "name": "userId", "type": "numeric" },
             { "name": "to", "type": "bytea" },
-            { "name": "recovery", "type": "bytea" },
-            { "name": "from", "type": "bytea" }
+            { "name": "recovery", "type": "bytea" }
         ]
       },
       "event": {
