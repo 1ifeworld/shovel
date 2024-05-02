@@ -10,7 +10,7 @@
     "integrations": [{
       "name": "IdRegistry",
       "enabled": true,
-      "sources": [{"name": "optimism"}],
+      "sources": [{"name": "optimism", "start": 115761578}],
       "table": {
         "name": "users",
         "columns": [
