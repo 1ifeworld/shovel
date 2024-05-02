@@ -21,6 +21,11 @@
             { "name": "recovery", "type": "bytea" }
         ]
       },
+      "block": [
+      {"name": "block_time", "column": "block_time"},
+      {"name": "block_hash", "column": "block_hash"},
+      {"name": "trace_action_from", "column": "from"}
+      ],
       "event": {
         "name": "Register",
         "type": "event",
