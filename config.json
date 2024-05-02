@@ -1,13 +1,10 @@
 {
-    "pg_url": "postgresql://postgres:aEHjXktnfEmphyxDJZYRvOgGyuetbUtN@viaduct.proxy.rlwy.net:25026/railway",
-    "dashboard": {
-      "root_password": "hi" 
-    },
+    "pg_url": "$DATABASE_URL",
     "eth_sources": [
       {
         "name": "optimism",
         "chain_id": 10,
-        "url": "https://wild-chaotic-meme.optimism.quiknode.pro/58c9d38ed8dd1d795e4b20726866866d595a7cda"
+        "url": "RPC_URL_10"
       }
     ],
     "integrations": [{
