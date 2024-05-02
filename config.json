@@ -18,12 +18,13 @@
             { "name": "id", "type": "numeric" },
             { "name": "userId", "type": "numeric" },
             { "name": "to", "type": "bytea" },
-            { "name": "recovery", "type": "bytea" }
+            { "name": "recovery", "type": "bytea" },
+            { "name": "timestamp", "type": "numeric" },
+            { "name": "from", "type": "from" }
         ]
       },
       "block": [
-      {"name": "block_time", "column": "block_time"},
-      {"name": "block_hash", "column": "block_hash"},
+      {"name": "block_time", "column": "timestamp"},
       {"name": "trace_action_from", "column": "from"}
       ],
       "event": {
