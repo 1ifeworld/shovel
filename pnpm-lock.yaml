@@ -1,0 +1,27 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@indexsupply/shovel-config':
+    specifier: npm:@jsr/indexsupply__shovel-config@^0.0.11
+    version: /@jsr/indexsupply__shovel-config@0.0.11
+
+devDependencies:
+  typescript:
+    specifier: ^5.4.5
+    version: 5.4.5
+
+packages:
+
+  /@jsr/indexsupply__shovel-config@0.0.11:
+    resolution: {integrity: sha512-ZL6N5jMsOQtWrOJ3DcJvVcfpMUtwMcuhq3kJ5WDxYW2SEjz5LoAguU+tJUSKuNFoWtVSWDPteVhPDbJTPxFYRQ==, tarball: https://npm.jsr.io/~/8/@jsr/indexsupply__shovel-config/0.0.11.tgz}
+    dev: false
+
+  /typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true

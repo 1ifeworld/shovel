@@ -1,0 +1,65 @@
+{
+    "pg_url": "postgresql://postgres:aEHjXktnfEmphyxDJZYRvOgGyuetbUtN@viaduct.proxy.rlwy.net:25026/railway",
+    "dashboard": {
+      "root_password": "hi" 
+    },
+    "eth_sources": [
+      {
+        "name": "optimism",
+        "chain_id": 10,
+        "url": "https://wild-chaotic-meme.optimism.quiknode.pro/58c9d38ed8dd1d795e4b20726866866d595a7cda"
+      }
+    ],
+    "integrations": [{
+      "name": "IdRegistry",
+      "enabled": true,
+      "sources": [{"name": "optimism"}],
+      "table": {
+        "name": "User",
+        "columns": [
+            { "name": "id", "type": "numeric" },
+            { "name": "timestamp", "type": "numeric" },
+            { "name": "userId", "type": "numeric" },
+            { "name": "to", "type": "bytea" },
+            { "name": "recovery", "type": "bytea" },
+            { "name": "from", "type": "bytea" }
+        ]
+      },
+      "block": [
+        {
+            "name": "block_num",
+            "column": "block_num"
+        },
+        {
+            "name": "block_time",
+            "column": "timestamp"
+        },
+        {
+            "name": "block_hash",
+            "column": "block_hash"
+        },
+        {
+            "name": "tx_idx",
+            "column": "tx_idx"
+        },
+        {
+            "name": "trace_action_from", 
+            "column": "from"
+        },
+        {
+            "name": "tx_hash",
+            "column": "tx_hash"
+        }
+      ],
+      "event": {
+        "name": "Register",
+        "type": "event",
+        "anonymous": false,
+        "inputs": [
+            { "indexed": true, "name": "to", "type": "address", "column": "to" },
+            { "indexed": false, "name": "id", "type": "uint256", "column": "userId" },
+            { "indexed": false, "name": "recovery", "type": "address", "column": "recovery" }
+        ]
+      }
+    }]
+  }
