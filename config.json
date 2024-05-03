@@ -31,7 +31,7 @@
       {"name": "block_time", "column": "timestamp"}
       ],
       "event": {
-        "name": "register",
+        "name": "Register",
         "type": "event",
         "anonymous": false,
         "inputs": [
