@@ -6,7 +6,7 @@
         "chain_id": 10,
         "url": "$RPC_URL_10",
         "batch_size": 100,
-        "concurrency": 5
+        "concurrency": 1
       }
     ],
     "integrations": [{
