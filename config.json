@@ -20,7 +20,7 @@
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "numeric" },
-            { "name": "from", "type": "from" }
+            { "name": "from", "type": "bytea" }
         ]
       },
       "block": [
