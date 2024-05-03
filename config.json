@@ -15,7 +15,6 @@
       "table": {
         "name": "users",
         "columns": [
-            { "name": "id", "type": "numeric" },
             { "name": "userid", "type": "numeric" },
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
