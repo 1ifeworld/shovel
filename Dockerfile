@@ -6,4 +6,4 @@ RUN echo $PORT
 RUN echo $DATABASE_URL
 RUN echo $RPC_URL_10
 COPY config.json .
-CMD shovel -config config.json -l :$PORT
+CMD shovel -config config.json
