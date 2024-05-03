@@ -2,16 +2,15 @@
     "pg_url": "$DATABASE_URL",
     "eth_sources": [
       {
-        "name": "optimism",
+        "name": "op",
         "chain_id": 10,
         "url": "$RPC_URL_10"
       }
     ],
-  
     "integrations": [{
       "name": "IdRegistry",
       "enabled": true,
-      "sources": [{"name": "optimism", "start": 115761578}],
+      "sources": [{"name": "op", "start": 115761578}],
       "table": {
         "name": "users",
         "columns": [
@@ -19,7 +18,6 @@
             { "name": "to", "type": "text" },
             { "name": "recovery", "type": "text" },
             { "name": "timestamp", "type": "text" },
-            { "name": "from", "type": "text" },
             { "name": "log_addr", "type": "text" }
         ]
       },
@@ -30,8 +28,7 @@
           "filter_op": "contains",
           "filter_arg": ["0x44192479891D358Ec917765dbF6472B916DC9A0C"]
         },
-      {"name": "block_time", "column": "timestamp"},
-      {"name": "trace_action_from", "column": "from"}
+      {"name": "block_time", "column": "timestamp"}
       ],
       "event": {
         "name": "register",
