@@ -5,8 +5,8 @@
         "name": "op",
         "chain_id": 10,
         "url": "$RPC_URL_10",
-        "batch_size": 10000,
-        "concurrency": 5
+        "batch_size": 2000,
+        "concurrency": 2
       }
     ],
     "integrations": [{
