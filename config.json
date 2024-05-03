@@ -5,7 +5,7 @@
         "name": "op",
         "chain_id": 10,
         "url": "$RPC_URL_10",
-        "batch_size": 100,
+        "batch_size": 50,
         "concurrency": 1
       }
     ],
