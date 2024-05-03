@@ -34,7 +34,7 @@
       {"name": "trace_action_from", "column": "from"}
       ],
       "event": {
-        "name": "Register",
+        "name": "register",
         "type": "event",
         "anonymous": false,
         "inputs": [
