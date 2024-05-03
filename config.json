@@ -35,17 +35,14 @@
       {"name": "trace_action_from", "column": "from"}
       ],
       "event": {
-        "name": "register",
+        "name": "Register",
         "type": "event",
         "anonymous": false,
         "inputs": [
             { "indexed": true, "name": "to", "type": "address", "column": "to" },
             { "indexed": false, "name": "id", "type": "uint256", "column": "userid" },
             { "indexed": false, "name": "recovery", "type": "address", "column": "recovery" }
-        ],
-        "notification": {
-          "columns": ["userid", "to", "recovery", "from"]
-      }
+        ]
       }
     }]
   }
