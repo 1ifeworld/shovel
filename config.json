@@ -1,5 +1,8 @@
 {
     "pg_url": "$DATABASE_URL",
+    "dashboard": {
+        "root_password": "$PASSWORD"
+    },
     "eth_sources": [
       {
         "name": "op",
@@ -20,11 +23,13 @@
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "int" },
+            { "name": "from", "type": "bytea" },
             { "name": "log_addr", "type": "bytea" }
         ]
       },
       "block": [
         {"name": "block_time", "column": "timestamp"},
+        {"name": "trace_action_from", "column": "from"},
         {
           "name": "log_addr",
           "column": "log_addr",
