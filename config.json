@@ -25,15 +25,15 @@
         ]
       },
       "block": [
+        {"name": "block_time", "column": "timestamp"},
+        {"name": "trace_action_from", "column": "from"},
         {
           "name": "log_addr",
           "column": "log_addr",
           "filter_op": "contains",
           "filter_arg": ["0x44192479891D358Ec917765dbF6472B916DC9A0C"]
-        },
-      {"name": "block_time", "column": "timestamp"},
-      {"name": "trace_action_from", "column": "from"}
-      ],
+        }
+    ],
       "event": {
         "name": "Register",
         "type": "event",
