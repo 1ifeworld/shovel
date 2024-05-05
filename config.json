@@ -23,7 +23,6 @@
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "int" },
-            { "name": "from", "type": "bytea" },
             { "name": "log_addr", "type": "bytea" }
         ]
       },
