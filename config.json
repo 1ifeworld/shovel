@@ -17,9 +17,9 @@
         "name": "users",
         "columns": [
             { "name": "userid", "type": "int" },
-            { "name": "to", "type": "text" },
-            { "name": "recovery", "type": "text" },
-            { "name": "log_addr", "type": "text" }
+            { "name": "to", "type": "bytea" },
+            { "name": "recovery", "type": "bytea" },
+            { "name": "log_addr", "type": "bytea" }
         ]
       },
       "block": [
