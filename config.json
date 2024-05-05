@@ -19,8 +19,6 @@
             { "name": "userid", "type": "int" },
             { "name": "to", "type": "text" },
             { "name": "recovery", "type": "text" },
-            { "name": "timestamp", "type": "text" },
-            { "name": "from", "type": "text" },
             { "name": "log_addr", "type": "text" }
         ]
       },
@@ -30,9 +28,7 @@
           "column": "log_addr",
           "filter_op": "contains",
           "filter_arg": ["0x44192479891D358Ec917765dbF6472B916DC9A0C"]
-        },
-      {"name": "block_time", "column": "timestamp"},
-      {"name": "trace_action_from", "column": "from"}
+        }
       ],
       "event": {
         "name": "Register",
