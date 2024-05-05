@@ -19,8 +19,6 @@
             { "name": "userid", "type": "int" },
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
-            { "name": "timestamp", "type": "bytea" },
-            { "name": "from", "type": "bytea" },
             { "name": "log_addr", "type": "bytea" }
         ]
       },
@@ -30,9 +28,7 @@
           "column": "log_addr",
           "filter_op": "contains",
           "filter_arg": ["0x44192479891D358Ec917765dbF6472B916DC9A0C"]
-        },
-      {"name": "block_time", "column": "timestamp"},
-      {"name": "trace_action_from", "column": "from"}
+        }
       ],
       "event": {
         "name": "Register",
