@@ -26,6 +26,9 @@
             { "name": "log_addr", "type": "bytea" }
         ]
       },
+      "notification": {
+        "columns": ["userid", "to", "recovery", "timestamp"]
+    },
       "block": [
         {"name": "block_time", "column": "timestamp"},
         {
@@ -44,9 +47,6 @@
             { "indexed": false, "name": "id", "type": "uint256", "column": "userid" },
             { "indexed": false, "name": "recovery", "type": "address", "column": "recovery" }
         ]
-      },
-      "notification": {
-        "columns": ["userid", "to", "recovery", "timestamp"]
-    }
+      }
     }]
   }
