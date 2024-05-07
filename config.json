@@ -26,9 +26,6 @@
             { "name": "log_addr", "type": "bytea" }
         ]
       },
-      "notification": {
-        "columns": ["userid", "to", "recovery", "timestamp"]
-    },
       "block": [
         {"name": "block_time", "column": "timestamp"},
         {
