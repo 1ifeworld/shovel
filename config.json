@@ -19,18 +19,17 @@
       "table": {
         "name": "users",
         "columns": [
-            { "name": "userid", "type": "int" },
+            { "name": "userid", "type": "numeric" },
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "int" },
+            { "name": "blockNumber", "type": "numeric" },
             { "name": "log_addr", "type": "bytea" }
         ]
       },
-      "notification": {
-        "columns": ["userid", "to", "recovery", "timestamp"]
-    },
       "block": [
         {"name": "block_time", "column": "timestamp"},
+        {"name": "block_num", "column": "blockNumber"},
         {
           "name": "log_addr",
           "column": "log_addr",
