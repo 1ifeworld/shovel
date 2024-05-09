@@ -23,13 +23,13 @@
             { "name": "to", "type": "bytea" },
             { "name": "recovery", "type": "bytea" },
             { "name": "timestamp", "type": "int" },
-            { "name": "blockNumber", "type": "numeric" },
+            {"name": "block_num", "type": "numeric"},
             { "name": "log_addr", "type": "bytea" }
         ]
       },
       "block": [
         {"name": "block_time", "column": "timestamp"},
-        {"name": "block_num", "column": "blockNumber"},
+        {"name": "block_num", "column": "block_num"},
         {
           "name": "log_addr",
           "column": "log_addr",
